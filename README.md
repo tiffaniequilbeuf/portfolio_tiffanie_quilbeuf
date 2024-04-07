@@ -18,8 +18,8 @@ ___
 ## TODO
 _Cette section est éphémère. Elle me servira, en plus des tâches à faire (TODO), à me laisser un repère sur l'avancée du projet._ 
 
-- Créer l'adresse o2Switch
-- Créer la structure HTML
+- Reprendre à partir de contact, les inputs sont à définir ainsi que leur label. Finir les voie classiques aussi. 
+
 - Installer SASS (à ce moment-là, mettre en place le script de création du build)
 - Rédaction du SCSS/CSS
 - Trouver une solution pour minimiser plus que le CSS pour la production.
@@ -32,6 +32,11 @@ J'ai créé [la maquette du projet](https://www.figma.com/file/LxMjDEEO0goxek98j
 Cette maquette comporte une visualisation du projet en version mobile, tablette et desktop. Une version desktop du projet est également disponible en mode sombre. Je la déclinerai bien sûr dans les autres formats lors de l'intégration.
 
 Tous les contrastes ont été testés sur [Coloor Contrast Checker](https://coolors.co/contrast-checker/b4bbfa-453232). 
+
+## Hebergement
+L'école nous prête un hébergemement sur o2Switch pendant la durée de la formation. Je n'ai en revanche pas le droit de créer plus de 2 sous-domaines. Etant donné qu'il s'agit de mon nom, l'adresse sera la suivante :
+J'ai demandé la sécurisation HTTPS pour plus de sécurité. 
+
 
 ## Phase d'intégration
 
