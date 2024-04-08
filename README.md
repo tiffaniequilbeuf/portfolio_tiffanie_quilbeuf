@@ -47,7 +47,31 @@ J'ai demandé la sécurisation HTTPS pour plus de sécurité.
 
 
 
-Notes : 
+**Notes** : 
  
 Images des langages informatiques avec un alt, le reste aria-hidden true car n'apporte rien aun contenu.
 
+**Note 2, début de construction du script build :** 
+Ce script se présente de la façon suivante : 
+
+``` json
+"build": 
+/*Je créé le dossier CSS et le minifie. Il n'y a plus le fichier map*/
+"sass scss:build/css --style=compressed --no-source-map 
+```
+``` json
+/*Je créé l'ensemble des répertoires du projet*/
+&& mkdir build\\font 
+&& mkdir build\\img 
+```
+
+``` json
+/*Je copie les éléments dans les bons répertoires*/
+&& xcopy font build\\font /s /e /i 
+&& xcopy img build\\img /s /e /i 
+&& copy index.html build ",
+```
+Copier :
+_"build/css --style=compressed --no-source-map && mkdir build\\font && mkdir build\\img && xcopy font build\\font /s /e /i && xcopy img build\\img /s /e /i && copy index.html build",_
+
+Dans un second temps, je chercherais une solution pour minifier et automatiser la création du build voir de l'envoie FTP.

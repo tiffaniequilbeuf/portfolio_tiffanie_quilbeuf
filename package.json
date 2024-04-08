@@ -1,0 +1,23 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "L'objectif de ce portfolio est de donner une première image de mon travail en tant que développeur, en dehors de mon CV. Ce projet pourra également appuyer :",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss:css --watch",
+    "mini-build": "build/css --style=compressed --no-source-map && mkdir build\\font && mkdir build\\img && xcopy font build\\font /s /e /i && xcopy img build\\img /s /e /i && copy index.html build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiffaniequilbeuf/portfolio_tiffanie_quilbeuf.git"
+  },
+  "author": "Tiffanie QUILBEUF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiffaniequilbeuf/portfolio_tiffanie_quilbeuf/issues"
+  },
+  "homepage": "https://github.com/tiffaniequilbeuf/portfolio_tiffanie_quilbeuf#readme",
+  "devDependencies": {
+    "sass": "^1.74.1"
+  }
+}
