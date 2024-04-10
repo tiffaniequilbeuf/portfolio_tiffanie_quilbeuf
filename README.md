@@ -12,9 +12,13 @@ J'aimerais poster régulièrement les avancées du projet. Toute la partie CSS s
 ___
 
 - README généré le 07-04-2024 par Tiffanie QUILBEUF
-- Dernière mise à jour le : 07-04-2024 
+- Dernière mise à jour le : 10-04-2024 
 - Dernière mise à jour du Build en ligne le : X
-___
+
+## DO
+add fonts, correction bug sur le build package lock
+
+
 ## TODO
 _Cette section est éphémère. Elle me servira, en plus des tâches à faire (TODO), à me laisser un repère sur l'avancée du projet._ 
 
@@ -51,13 +55,15 @@ J'ai demandé la sécurisation HTTPS pour plus de sécurité.
  
 Images des langages informatiques avec un alt, le reste aria-hidden true car n'apporte rien aun contenu.
 
-**Note 2, début de construction du script build :** 
+## Déploiement
+### A propos du dossier build
+
 Ce script se présente de la façon suivante : 
 
 ``` json
 "build": 
 /*Je créé le dossier CSS et le minifie. Il n'y a plus le fichier map*/
-"sass scss:build/css --style=compressed --no-source-map 
+"sass scss:build/css --style=compressed --no-source-map
 ```
 ``` json
 /*Je créé l'ensemble des répertoires du projet*/
@@ -71,7 +77,4 @@ Ce script se présente de la façon suivante :
 && xcopy img build\\img /s /e /i 
 && copy index.html build ",
 ```
-Copier :
-_"build/css --style=compressed --no-source-map && mkdir build\\font && mkdir build\\img && xcopy font build\\font /s /e /i && xcopy img build\\img /s /e /i && copy index.html build",_
-
 Dans un second temps, je chercherais une solution pour minifier et automatiser la création du build voir de l'envoie FTP.
