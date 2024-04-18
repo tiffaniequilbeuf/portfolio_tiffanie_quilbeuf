@@ -130,6 +130,8 @@
     </section>
 </main>
 
+
+<!--Pas exclus que je passe les contacts en PHP avec une petite base de donnée.-->
 <footer class="contact" id="contact" tabindex="-1" role="contentinfo">
     <div class="container contact-container">
         <h2>Contactez-moi</h2>
@@ -137,17 +139,17 @@
             <h3 class="h4">Par formulaire</h3>
             <!--Stop ici pour ce soir-->
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="lastname@gmail.com">
+            <input type="email" name="email" id="email" placeholder="lastname@gmail.com">
             <label for="message">Message</label>
-            <textarea id="message" placeholder="Saisissez votre message ici"></textarea>
+            <textarea id="message" name="textarea" placeholder="Saisissez votre message ici"></textarea>
             <button type="submit" class="btn contact-me">Me contacter</button>
         </form>
         <div class="classics">
             <h3 class="h4">Par voie classique</h3>
             <ul class="external-links">
-                <li><a class="external-link" href="mailto:tiffaniequilbeuf2@gmail.com">tiffaniequilbeuf2@gmail.com</a></li>
-                <li><a class="external-link" href="tel:0768704278">07 68 70 42 78</a></li>
-                <li><a class="external-link" href="https://www.linkedin.com/in/tiffaniequilbeuf-dev/">tiffaniequilbeuf-dev</a></li>
+                <li><a class="external-link" href="mailto:tiffaniequilbeuf2@gmail.com" aria-label="Contactez moi avec cet email">tiffaniequilbeuf2@gmail.com</a></li>
+                <li><a class="external-link" href="tel:0768704278" aria-label="Appellez-moi sur ce numéro">07 68 70 42 78</a></li>
+                <li><a class="external-link" href="https://www.linkedin.com/in/tiffaniequilbeuf-dev/" aria-label="Allez vers mon LinkedIn">tiffaniequilbeuf-dev</a></li>
             </ul>  
         </div>
     </div>
