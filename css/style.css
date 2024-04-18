@@ -166,5 +166,37 @@ address {
   font-weight: 700;
   src: url("../fonts/montserrat-v26-latin-700.woff2") format("woff2");
 }
+:root {
+  /*Colors*/
+  --white: #EFEDE7;
+  --grey: #352F44;
+  --light-green: #42DCBD;
+  --green: #005D58;
+  --yellow: #F5C24B;
+  --normal-font: "Lato", "Segoe UI", sans-serif;
+  --title-font: "Montserrat", "Segoe UI", sans-serif;
+}
+
+[data-theme=dark] {
+  --text: var(--white);
+  --bg: var(--grey);
+  --custom: var(--yellow);
+}
+
+[data-theme=light] {
+  --text: var(--grey);
+  --bg: var(--white);
+  --custom: var(--light-green);
+}
+
+body {
+  font-family: var(--normal-font);
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text);
+  background-color: var(--bg);
+}
 
 /*# sourceMappingURL=style.css.map */
