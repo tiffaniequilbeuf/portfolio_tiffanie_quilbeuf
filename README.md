@@ -13,19 +13,18 @@ ___
 
 - README généré le 07-04-2024 par Tiffanie QUILBEUF
 - Dernière mise à jour le : 10-04-2024 
-- Dernière mise à jour du Build en ligne le : X
+- Dernière mise à jour du Build en ligne le : 10-04-2024 21:30
 
 ## DO
-add fonts, correction bug sur le build package lock
-
+quelques aria-label sur les classiques
 
 ## TODO
-_Cette section est éphémère. Elle me servira, en plus des tâches à faire (TODO), à me laisser un repère sur l'avancée du projet._ 
+_Cette section est éphémère. Elle me servira, en plus des tâches à faire (TODO), à me laisser un repère sur l'avancée du projet._  
 
-- Reprendre à partir de contact, les inputs sont à définir ainsi que leur label. Finir les voie classiques aussi. 
-
-- Installer SASS (à ce moment-là, mettre en place le script de création du build)
 - Rédaction du SCSS/CSS
+
+-Et si je gérais mon formulaire contact en PHP ? Refonte à prévoir ?
+
 - Trouver une solution pour minimiser plus que le CSS pour la production.
 ___
 
