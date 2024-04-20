@@ -192,11 +192,54 @@ address {
 body {
   font-family: var(--normal-font);
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: 1.75;
   font-weight: 400;
   font-style: normal;
   color: var(--text);
   background-color: var(--bg);
+}
+
+body {
+  text-wrap: pretty;
+}
+
+:is(h1, .h1, h2, .h2, .work-title) {
+  font-family: var(--title-font);
+}
+
+:is(h1, .h1) {
+  font-size: 3.75rem;
+  line-height: 1.4666666667;
+}
+
+:is(h2, .h2) {
+  font-size: 2.5rem;
+  line-height: 3;
+}
+
+:is(h3, .h3) {
+  font-size: 1.25rem;
+  line-height: 2.8;
+}
+
+:is(h4, .h4) {
+  font-size: 1.25rem;
+  line-height: 2.8;
+}
+
+@media screen and (min-width: 48em) {
+  :is(h1, .h1) {
+    font-size: clamp(3.75rem, 1.75rem + 4.167vw, 5.5rem);
+  }
+  :is(h2, .h2) {
+    font-size: clamp(2.5rem, 0.208rem + 4.769vw, 4.5rem);
+  }
+  :is(h3, .h3) {
+    font-size: clamp(1.25rem, -0.756rem + 4.173vw, 3rem); /*Note : je suis mon plan pour le moment mais ça fait gros*/
+  }
+  :is(h4, .h4) {
+    font-size: clamp(1.25rem, 0.104rem + 2.385vw, 2.25rem);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
