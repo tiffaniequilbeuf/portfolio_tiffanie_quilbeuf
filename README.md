@@ -12,18 +12,19 @@ J'aimerais poster régulièrement les avancées du projet. Toute la partie CSS s
 ___
 
 - README généré le 07-04-2024 par Tiffanie QUILBEUF
-- Dernière mise à jour le : 10-04-2024 
+- Dernière mise à jour le : 20-04-2024 
 - Dernière mise à jour du Build en ligne le : 10-04-2024 21:30
 
 ## DO
-quelques aria-label sur les classiques
+ajout de règle typographiques
+Correction : boutons code et site passés en lien <a> car il s'agit bien de renvoie vers un site. 
 
 ## TODO
 _Cette section est éphémère. Elle me servira, en plus des tâches à faire (TODO), à me laisser un repère sur l'avancée du projet._  
 
 - Rédaction du SCSS/CSS
 
--Et si je gérais mon formulaire contact en PHP ? Refonte à prévoir ?
+- Et si je gérais mon formulaire contact en PHP ? Refonte à prévoir ?
 
 - Trouver une solution pour minimiser plus que le CSS pour la production.
 ___
