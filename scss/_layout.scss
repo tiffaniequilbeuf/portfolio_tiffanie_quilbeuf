@@ -56,7 +56,6 @@
 
 .main-header{
   display:grid;
-
 }
 
 
@@ -69,13 +68,11 @@
   margin-inline: auto;
 }
 
-
-
 /*___Tablette___*/
 @media screen and (min-width: 48em) {
   .main-header{
     display : grid;
-    flex-direction: row;
+    grid-template-columns: 1fr 2fr;
     gap : 1.5rem;
   }
 
