@@ -17,12 +17,12 @@ ___
 
 ## DO
 ajout de règle typographiques
-Correction : boutons code et site passés en lien <a> car il s'agit bien de renvoie vers un site. 
+Début du layout
 
 ## TODO
 _Cette section est éphémère. Elle me servira, en plus des tâches à faire (TODO), à me laisser un repère sur l'avancée du projet._  
 
-- Rédaction du SCSS/CSS
+- Rédaction du SCSS/CSS : se prévoir une session ajout des images après le layout. 
 
 - Et si je gérais mon formulaire contact en PHP ? Refonte à prévoir ?
 

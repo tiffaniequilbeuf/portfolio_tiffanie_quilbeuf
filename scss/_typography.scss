@@ -2,6 +2,10 @@ body {
   text-wrap: pretty;
 }
 
+::first-letter {
+  text-transform: uppercase ;
+}
+
 :is(h1, .h1, h2, .h2, .work-title){
 font-family: var(--title-font);
 }
@@ -39,4 +43,8 @@ font-family: var(--title-font);
   :is(h4,.h4){
     font-size: clamp(1.25rem, 0.104rem + 2.385vw, 2.25rem);
   }
+}
+
+.work-title{
+  text-transform: uppercase;
 }

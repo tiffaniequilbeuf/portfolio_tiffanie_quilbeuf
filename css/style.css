@@ -203,6 +203,10 @@ body {
   text-wrap: pretty;
 }
 
+::first-letter {
+  text-transform: uppercase;
+}
+
 :is(h1, .h1, h2, .h2, .work-title) {
   font-family: var(--title-font);
 }
@@ -239,6 +243,27 @@ body {
   }
   :is(h4, .h4) {
     font-size: clamp(1.25rem, 0.104rem + 2.385vw, 2.25rem);
+  }
+}
+.work-title {
+  text-transform: uppercase;
+}
+
+.container {
+  margin-inline: auto;
+  width: calc(100% - 1.5rem - 1.5rem);
+}
+
+/*T à partir de 768px */
+@media screen and (min-width: 48em) {
+  .container {
+    max-width: calc(100% - 5rem - 5rem);
+  }
+}
+/*D à partir de 1200px */
+@media screen and (min-width: 75em) {
+  .container {
+    max-width: calc(100% - 10rem - 10rem);
   }
 }
 
