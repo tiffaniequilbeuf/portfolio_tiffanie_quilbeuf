@@ -1,0 +1,56 @@
+/*___Typography--*/
+.nav{
+  font-family: var(--title-font);
+  background-color: var(--bg);
+}
+
+/*___Mobile___*/
+/*TODO se renseigner sur la fonctionnalité Popover, pas encore supporté par Firefox mais 80% sur caniuse. */
+@media screen and (max-width: 35.99em) {
+
+  .burger-btn{
+    display : grid;
+    border : 0;
+    padding: .5rem;
+  }
+
+  .list-menu[hidden]{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: scaleY(0);
+  }
+
+  .list-menu{
+    display: grid;
+    gap: 2rem;
+    background: var(--light-grey);
+
+    position : absolute;
+    right: 0;
+    left : 0;
+    top:.5rem;
+    text-align: center;
+    padding: 2rem;
+    padding-block-end: 9rem;
+    transform: translateY(4rem);
+    overflow: hidden;
+  }
+}
+
+/*Supérieur à mobile */
+@media screen and (min-width: 36em) {
+  .burger-btn{
+  display: none;
+  }
+
+  .list-menu{
+    display: flex;
+    flex-direction: row;
+    gap:clamp(0rem, -1.84rem + 5.12vw, 2rem);
+  }
+
+  .link-menu-item{
+    padding: .5rem;
+  }
+}

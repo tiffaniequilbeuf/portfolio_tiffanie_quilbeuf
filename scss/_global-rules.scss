@@ -2,6 +2,7 @@
     /*Colors*/
     --white : #EFEDE7;
     --grey : #352F44;
+    --light-grey : #D9D9D9;
     --light-green: #42DCBD;
     --green : #005D58;
     --yellow: #F5C24B;
@@ -10,16 +11,22 @@
     --title-font : 'Montserrat', 'Segoe UI', sans-serif;
 }
 
-[data-theme="dark"] {
-    --text: var(--white);
-    --bg: var(--grey);
-    --custom: var(--yellow);
-}
+/* TODO [data-theme="dark"]*/
+/*@media (prefers-color-scheme: dark){
+    :root {
+        --text: var(--white);
+        --bg: var(--grey);
+        --custom: var(--yellow);
+    }
+}*/
 
-[data-theme="light"] {
-    --text: var(--grey);
-    --bg: var(--white);
-    --custom: var(--light-green);
+/*[data-theme="light"]*/
+@media (prefers-color-scheme: light){
+    :root {
+        --text: var(--grey);
+        --bg: var(--white);
+        --custom: var(--light-green);
+    }
 }
 
 body{
