@@ -13,19 +13,25 @@ ___
 
 - README généré le 07-04-2024 par Tiffanie QUILBEUF
 - Dernière mise à jour le : 20-04-2024 
-- Dernière mise à jour du Build en ligne le : 10-04-2024 21:30
+- Dernière mise à jour du Build en ligne le : 21-04-2024 19:15
 
 ## DO
-ajout de règle typographiques
-Début du layout
+ajout momentanée des préférences thème utilisateurs (dark en commentaire). Il évoluera par la suite en JS.
+Sémantique : nav sur html
+Début du layout avec les skips-links actifs et la partie main-header.
+Gestion SASS séparée de la navigation (comportement spécifique).
+Modification du script avec ajout du comportement bouton (à améliorer en js)
 
 ## TODO
-_Cette section est éphémère. Elle me servira, en plus des tâches à faire (TODO), à me laisser un repère sur l'avancée du projet._  
+_Cette section est éphémère. Elle me servira, en plus des tâches à faire (TODO), à me laisser un repère sur l'avancée du projet.
+Focus SCSS/CSS en premier_  
 
-- Rédaction du SCSS/CSS : se prévoir une session ajout des images après le layout. 
+- se prévoir une session ajout des images après le layout.  
+- bien repasser sur la navigation et ses comportements. Pour l'instant j'ai la base.
 
 - Et si je gérais mon formulaire contact en PHP ? Refonte à prévoir ?
 
+- idée pour les images : classique CSS. Par la suite créer une fonction qui appelle les images suivant ce que j'ai d'écris dans la div ?
 - Trouver une solution pour minimiser plus que le CSS pour la production.
 ___
 
