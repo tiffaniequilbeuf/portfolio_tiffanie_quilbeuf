@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass scss:css --watch",
-    "build": "sass scss:build/css --style=compressed --no-source-map && mkdir build\\font && mkdir build\\img && xcopy font build\\font /s /e /i && xcopy img build\\img /s /e /i && copy index.html build"
+    "build": "sass scss:build/css --style=compressed --no-source-map && mkdir build\\js && mkdir build\\font && mkdir build\\img && xcopy font build\\font /s /e /i && xcopy img build\\img /s /e /i && xcopy js build\\js /s /e /i && copy index.html build && copy offer.html build"
   },
   "repository": {
     "type": "git",
