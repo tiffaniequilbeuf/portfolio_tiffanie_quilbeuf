@@ -13,43 +13,46 @@
 <body>
     <div class="skip-links">
         <a href="#main">contenu principal</a>
-        <a href="#contact">contactez-moi</a>
+        <a href="#nav">navigation</a>
+        <a href="#contact">Contactez-moi</a>
     </div>
 
-<header class="nav" role="navigation">
+<header class="nav">
     <div class="container">
         <p class="title-nav">Tiffanie QUILBEUF</p>
-        <button class="burger-btn">
-            <span class="screen-reader-text">Toggle menu</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" aria-hidden="true">
-                <rect x="0" y="0" width="16" height="3" rx="1.5" fill="var(--dark-grey-blue)"></rect>
-                <rect x="0" y="6" width="16" height="3" rx="1.5" fill="var(--dark-grey-blue)"></rect>
-                <rect x="0" y="12" width="16" height="3" rx="1.5" fill="var(--dark-grey-blue)"></rect>
-            </svg>
-        </button>
-        <ul class="list-menu">
-            <li class="menu-item">
-                <a href="#about-me" class="link-menu-item">à propos</a>
-            </li>
-            <li class="menu-item">
-                <a href="#skills" class="link-menu-item">compétences</a>
-            </li>
-            <li class="menu-item">
-                <a href="#projects" class="link-menu-item">projets</a>
-            </li>
-            <li class="menu-item">
-                <a href="#contact" class="link-menu-item">contact</a>
-            </li>
-            <li class="menu-item">
-                <button class="theme">theme</button> <!--TODO télécharger svg-->
-            </li>
-        </ul> 
+        <nav id="nav" tabindex="-1" role="navigation">
+            <button class="burger-btn">
+                <span class="screen-reader-text">Toggle menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" aria-hidden="true">
+                    <rect x="0" y="0" width="16" height="3" rx="1.5" fill="var(--dark-grey-blue)"></rect>
+                    <rect x="0" y="6" width="16" height="3" rx="1.5" fill="var(--dark-grey-blue)"></rect>
+                    <rect x="0" y="12" width="16" height="3" rx="1.5" fill="var(--dark-grey-blue)"></rect>
+                </svg>
+            </button>
+            <ul class="list-menu" aria-expanded="false">
+                <li class="menu-item">
+                    <a href="#about-me" class="link-menu-item">à propos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#skills" class="link-menu-item">compétences</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#projects" class="link-menu-item">projets</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contact" class="link-menu-item">contact</a>
+                </li>
+                <li class="menu-item">
+                    <button class="theme">theme</button> <!--TODO télécharger svg-->
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>
 
 <main id="main" tabindex="-1" role="main">
-    <section class="main-header" role="banner">
-        <div class="container main-header-container">
+    <section class="main-header container" role="banner">
+        <div class="main-header-content">
             <div class="title-content">
                 <h1>tiffanie</h1>
                 <p class="subtitle">Conceptrice développeuse d'applications</p>
@@ -57,6 +60,9 @@
             </div>
             <a href="#contact" class="btn contact-me">Me contacter</a>
             <button class=" btn cv">Téléchargez mon CV</button>
+        </div>
+        <div class="container-tif">
+            <img src="img/tif.webp" alt="" aria-hidden="true">
         </div>
     </section>
 
@@ -155,7 +161,9 @@
             </ul>  
         </div>
     </div>
-</footer>  
+</footer>
+
+<script src="./js/nav.js"></script>
 </body>
 
 </html>
