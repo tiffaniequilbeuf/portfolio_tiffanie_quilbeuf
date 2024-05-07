@@ -334,6 +334,27 @@ body {
   }
 }
 /*___Desktop___*/
+/*______________Main ______________*/
+.languages, .about-skills, .call-to-action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Haha ! Tout se déplace suivant la taille de l'écran.
+Pour le moment pas de JS. Mais ça sera dynamique. Je fais comme si tout était fermé, puis ouvert. Certaines propriétés seront commentés*/
+@media screen and (max-width: 36em) {
+  .work, .work-content {
+    display: grid;
+  }
+  .work-content img {
+    order: -1;
+    justify-content: center;
+  }
+  /*.site, .code, .work-content p, .about-skills {
+    display: none;
+  }*/
+}
 /*___Typography--*/
 .nav {
   font-family: var(--title-font);
