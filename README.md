@@ -61,6 +61,9 @@ J'ai demandé la sécurisation HTTPS pour plus de sécurité.
  
 Images des langages informatiques avec un alt, le reste aria-hidden true car n'apporte rien aun contenu.
 
+__le 07-05__ : changement de façon de travailler sur Git. Pour m'entrainer je fonctionnerais par branche. Comme je reprends en cours de route et que j'en étais au layout je commence par une branche  feature/layout.
+
+
 ## Déploiement
 ### A propos du dossier build
 
