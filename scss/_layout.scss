@@ -81,17 +81,16 @@
   }
 }
 
-/*___Desktop___*/
-@media screen and (min-width: 75em) {
-
-}
-
 /*______________Main ______________*/
 
 .languages, .about-skills, .call-to-action{
   display: flex;
   flex-wrap: wrap;
   gap : .5rem;
+}
+
+.projects-container p{
+  margin-block-end: 3rem;
 }
 
 /* Haha ! Tout se déplace suivant la taille de l'écran.
@@ -103,37 +102,42 @@ Je met également un peu de couleur pour me repérer, un petit dégradé HSL, je
 
 .work-title{
   grid-area : w-title;
-  background-color: #ff5b25;
+  /*background-color: #ff5b25;*/
 }
 
 .work p {
   grid-area : w-txt;
-  background-color: #ff6c40;
+  /*background-color: #ff6c40;*/
 }
 
 .about-skills {
   grid-area : w-skills;
-  background-color: #ff8059;
+  /*background-color: #ff8059;*/
 }
 
 .more{
   grid-area: w-plus;
-  background-color: #ff9373;
+  /*background-color: #ff9373;*/
 }
 
 .code{
   grid-area: w-code;
-  background-color: #ff9373;
+  /*background-color: #ff9373;*/
 }
 
 .site{
   grid-area: w-site;
-  background-color: #ff9373;
+  /*background-color: #ff9373;*/
 }
 
 .work img{
   grid-area: w-img;
-  background-color: #00c2c2;
+  /*background-color: #00c2c2;*/
+}
+
+.site, .code, .more{
+  justify-self: center;
+  align-self: center;
 }
 
 /*___Mobile___*/
@@ -187,4 +191,22 @@ Je met également un peu de couleur pour me repérer, un petit dégradé HSL, je
   }*/
 }
 
+/*______________Footer ______________*/
 
+form{
+  display : grid;
+  gap : .6rem;
+}
+
+.contact-me{
+  justify-self: center;
+}
+
+/*___Desktop___*/
+@media screen and (min-width: 75em) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}
