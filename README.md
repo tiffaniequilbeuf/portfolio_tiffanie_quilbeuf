@@ -12,22 +12,38 @@ J'aimerais poster régulièrement les avancées du projet. Toute la partie CSS s
 ___
 
 - README généré le 07-04-2024 par Tiffanie QUILBEUF
-- Dernière mise à jour le : 20-04-2024 
+- Dernière mise à jour le : 12-05-2024 
 - Dernière mise à jour du Build en ligne le : 08-05-2024 10:45
 
 ## DO
-ajout momentanée des préférences thème utilisateurs (dark en commentaire). Il évoluera par la suite en JS.
+ajout momentanée des préférences thème utilisateurs (dark en commentaire)
+Il évoluera par la suite en JS.
 
 ## TODO
 _Cette section est éphémère. Elle me servira, en plus des tâches à faire (TODO), à me laisser un repère sur l'avancée du projet.
 Focus SCSS/CSS en premier_  
 
-- Modifier script du bouton  nav 
-- se prévoir une session ajout des images après le layout
+Etape par étape : 
+ - je rend la barre de navigation complètement fonctionnelle (résolution du bug) et défini les propriétés de toute la barre de navigation. 
+Je m'occupe des composants, 1 par branche :
+- navigation
+- boutons
+- bloc langages
+- bloc projet
+- page principale (liste des propriétés des éléments non composant)
+Transformation dynamique du formulaire
+Transformation dynamique de la section projet
 
-- Et si je gérais mon formulaire contact en PHP ? Refonte à prévoir ?
+## Idée à la volée
 
+Il faudra sans doute refondre en parti le projet mais avec Symfony : 
+- gestion du formulaire 
+- gestion des liens de la barre de navigation et des titres liés dynamiquement 
+- Création d'un back-end admnistratif ou l'on peut ajouter un projet 
+
+Image : 
 - idée pour les images : classique CSS. Par la suite créer une fonction qui appelle les images suivant ce que j'ai écris dans la div "truc", en basique gris, puis hover la version couleur ? J'imagine une sorte de toggle.
+
 - Trouver une solution pour minimiser plus que le CSS pour la production.
 ___
 
@@ -53,12 +69,11 @@ J'ai demandé la sécurisation HTTPS pour plus de sécurité.
 
 
 
-**Notes** : 
- 
-Images des langages informatiques avec un alt, le reste aria-hidden true car n'apporte rien aun contenu.
+**Notes** :
 
 __le 07-05__ : changement de façon de travailler sur Git. Pour m'entrainer je fonctionnerais par branche. Comme je reprends en cours de route et que j'en étais au layout je commence par une branche  feature/layout.
 
+__le 12-05__ : Première fusion réussi par contre j'ai oublié de switcher de branche. Je retente l'experience quand je travaillerais de manière isolée sur chacun des composants. 
 
 ## Déploiement
 ### A propos du dossier build
