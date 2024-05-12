@@ -17,21 +17,17 @@ ___
 
 ## DO
 ajout momentanée des préférences thème utilisateurs (dark en commentaire). Il évoluera par la suite en JS.
-Sémantique : nav sur html
-Début du layout avec les skips-links actifs et la partie main-header.
-Gestion SASS séparée de la navigation (comportement spécifique).
-Modification du script avec ajout du comportement bouton (à améliorer en js)
 
 ## TODO
 _Cette section est éphémère. Elle me servira, en plus des tâches à faire (TODO), à me laisser un repère sur l'avancée du projet.
 Focus SCSS/CSS en premier_  
 
-- se prévoir une session ajout des images après le layout.  
-- bien repasser sur la navigation et ses comportements. Pour l'instant j'ai la base.
+- Modifier script du bouton  nav 
+- se prévoir une session ajout des images après le layout
 
 - Et si je gérais mon formulaire contact en PHP ? Refonte à prévoir ?
 
-- idée pour les images : classique CSS. Par la suite créer une fonction qui appelle les images suivant ce que j'ai d'écris dans la div ?
+- idée pour les images : classique CSS. Par la suite créer une fonction qui appelle les images suivant ce que j'ai écris dans la div "truc", en basique gris, puis hover la version couleur ? J'imagine une sorte de toggle.
 - Trouver une solution pour minimiser plus que le CSS pour la production.
 ___
 
@@ -76,8 +72,9 @@ Ce script se présente de la façon suivante :
 ```
 ``` json
 /*Je créé l'ensemble des répertoires du projet*/
+js && mkdir build\font 
+&& mkdir build\img 
 && mkdir build\\font 
-&& mkdir build\\img 
 ```
 
 ``` json

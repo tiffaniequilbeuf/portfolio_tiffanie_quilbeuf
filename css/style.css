@@ -487,5 +487,47 @@ form {
     padding: 0.5rem;
   }
 }
+.svg-languages img {
+  height: 4.375rem;
+}
+
+/*___Footer___*/
+.external-links {
+  margin-inline-start: 2rem;
+}
+
+.external-link {
+  position: relative;
+}
+
+.external-link::before {
+  content: " ";
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  left: -2rem;
+  transform: translateY(50%);
+}
+
+.external-link.my-mail::before {
+  background: url("/img/gmail.svg") no-repeat;
+  background-size: contain;
+}
+
+.external-link.phone::before {
+  background: url("/img/phone.svg") no-repeat;
+  background-size: contain;
+}
+
+.external-link.linkedin::before {
+  background: url("/img/linkedin.svg") no-repeat;
+  background-size: contain;
+}
+
+/*Test : ajouter le filtre gris, ce n'est pas mon gris mais pourquoi pas.
+
+.svg-languages img{
+  filter: grayscale(100%) sepia(0%) invert(0%) brightness(100%) contrast(100%) saturate(0%) hue-rotate(0deg);
+}*/
 
 /*# sourceMappingURL=style.css.map */
