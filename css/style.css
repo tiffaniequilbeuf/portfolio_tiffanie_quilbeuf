@@ -212,12 +212,12 @@ body {
   text-wrap: pretty;
 }
 
-::first-letter {
-  text-transform: uppercase;
-}
-
 :is(h1, .h1, h2, .h2, .work-title) {
   font-family: var(--title-font);
+}
+
+:is(h1, .h1, h2, .h2, h3, .h3, .work-title)::first-letter {
+  text-transform: uppercase;
 }
 
 :is(h1, .h1) {
@@ -385,7 +385,7 @@ Je met également un peu de couleur pour me repérer, un petit dégradé HSL, je
   /*background-color: #00c2c2;*/
 }
 
-.site, .code, .more {
+.work img, .site, .code, .more {
   justify-self: center;
   align-self: center;
 }
@@ -529,5 +529,6 @@ form {
 .svg-languages img{
   filter: grayscale(100%) sepia(0%) invert(0%) brightness(100%) contrast(100%) saturate(0%) hue-rotate(0deg);
 }*/
+/*Autres règles globales à la page*/
 
 /*# sourceMappingURL=style.css.map */

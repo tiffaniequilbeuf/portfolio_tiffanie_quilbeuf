@@ -2,12 +2,12 @@ body {
   text-wrap: pretty;
 }
 
-::first-letter {
-  text-transform: uppercase ;
-}
-
 :is(h1, .h1, h2, .h2, .work-title){
 font-family: var(--title-font);
+}
+
+:is(h1, .h1, h2, .h2, h3, .h3, .work-title)::first-letter {
+  text-transform: uppercase ;
 }
 
 :is(h1,.h1){
