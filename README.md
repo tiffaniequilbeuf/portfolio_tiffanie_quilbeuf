@@ -13,7 +13,7 @@ ___
 
 - README généré le 07-04-2024 par Tiffanie QUILBEUF
 - Dernière mise à jour le : 20-04-2024 
-- Dernière mise à jour du Build en ligne le : 21-04-2024 19:15
+- Dernière mise à jour du Build en ligne le : 08-05-2024 10:45
 
 ## DO
 ajout momentanée des préférences thème utilisateurs (dark en commentaire). Il évoluera par la suite en JS.
@@ -60,6 +60,9 @@ J'ai demandé la sécurisation HTTPS pour plus de sécurité.
 **Notes** : 
  
 Images des langages informatiques avec un alt, le reste aria-hidden true car n'apporte rien aun contenu.
+
+__le 07-05__ : changement de façon de travailler sur Git. Pour m'entrainer je fonctionnerais par branche. Comme je reprends en cours de route et que j'en étais au layout je commence par une branche  feature/layout.
+
 
 ## Déploiement
 ### A propos du dossier build

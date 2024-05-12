@@ -81,11 +81,6 @@
   }
 }
 
-/*___Desktop___*/
-@media screen and (min-width: 75em) {
-
-}
-
 /*______________Main ______________*/
 
 .languages, .about-skills, .call-to-action{
@@ -94,21 +89,124 @@
   gap : .5rem;
 }
 
+.projects-container p{
+  margin-block-end: 3rem;
+}
+
 /* Haha ! Tout se déplace suivant la taille de l'écran.
-Pour le moment pas de JS. Mais ça sera dynamique. Je fais comme si tout était fermé, puis ouvert. Certaines propriétés seront commentés*/
+Testons avec grid-template-areas !
 
-@media screen and (max-width: 36em) {
-    .work, .work-content {
-      display: grid;
-    }
+Pour le moment pas de JS. Mais ça sera dynamique. Je fais comme si tout était ouvert puis je ferme. Je commenterais la fermeture.
 
-    .work-content img {
-      order: -1;
-      justify-content: center;
-    }
+Je met également un peu de couleur pour me repérer, un petit dégradé HSL, je n'ai pas testé le contraste. C'est uniquement pour le développement*/
 
-    /*.site, .code, .work-content p, .about-skills {
+.work-title{
+  grid-area : w-title;
+  /*background-color: #ff5b25;*/
+}
+
+.work p {
+  grid-area : w-txt;
+  /*background-color: #ff6c40;*/
+}
+
+.about-skills {
+  grid-area : w-skills;
+  /*background-color: #ff8059;*/
+}
+
+.more{
+  grid-area: w-plus;
+  /*background-color: #ff9373;*/
+}
+
+.code{
+  grid-area: w-code;
+  /*background-color: #ff9373;*/
+}
+
+.site{
+  grid-area: w-site;
+  /*background-color: #ff9373;*/
+}
+
+.work img{
+  grid-area: w-img;
+  /*background-color: #00c2c2;*/
+}
+
+.site, .code, .more{
+  justify-self: center;
+  align-self: center;
+}
+
+/*___Mobile___*/
+@media screen and (max-width: 47.99em) {
+  .work {
+    display: grid;
+    grid-template-areas:
+          "w-title  w-title w-title"
+          "w-img    w-img   w-img"
+          "w-plus   w-plus  w-plus"
+          "w-txt    w-txt   w-txt"
+          "w-skills w-code  w-site";
+  }
+
+    /*.site, .code, .work .text-content, .about-skills {
       display: none;
     }*/
 }
 
+/*___Tablette___*/
+@media screen and (min-width: 48em) {
+  .work {
+    display: grid;
+    grid-template-areas:
+          "w-title  w-title"
+          "w-img    w-site"
+          "w-img    w-code"
+          "w-img    w-plus"
+          "w-txt    w-txt"
+          "w-skills w-skills";
+  }
+
+  /*.text-content, .about-skills {
+    display: none;
+  }*/
+}
+
+/*___Desktop___*/
+@media screen and (min-width: 75em) {
+  .work {
+    display: grid;
+    grid-template-areas:
+          "w-img    w-title  w-title  w-title"
+          "w-img    w-txt    w-txt    w-txt"
+          "w-img    w-plus   w-site   w-code"
+          "w-skills w-skills w-skills w-skills";
+  }
+
+  /*.about-skills {
+  display: none;
+  }*/
+}
+
+/*______________Footer ______________*/
+
+form{
+  display : grid;
+  gap : .6rem;
+}
+
+.contact-me{
+  justify-self: center;
+}
+
+/*___Desktop___*/
+@media screen and (min-width: 75em) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}
